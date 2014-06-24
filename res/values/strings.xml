@@ -3,5 +3,15 @@
 
     <string name="app_name">FunctionSolver</string>
     <string name="hello_world">Hello world!</string>
+    <string name="instruction">Linear Function:\n\n
+    1. Click F1 and you can see a blue star is next to F1. \n\n
+    2. Input a number into first edit-text area and then click corresponded button (X,Y,Z) for one time, you can see the formula is generated below.\n \n
+    3. click F2 and then you can see a blue star is next to F2.\n\n
+    4. Repeat step 3 to get your second function.\n\n
+    5. Click Solve. If the functions can be solved, you can get the answers in the "Answer" column. Or there is no solution for the function. \n\n
+    6. Click Clear Button, you can clear all the data. \n \n  </string>
+    <string name="information">
+    \nHi everyone. I am the creator Sandy. I will update more function solvers later. You can contact me and tell me what
+    kind of functions you need. Have a good day. </string>
 
 </resources>

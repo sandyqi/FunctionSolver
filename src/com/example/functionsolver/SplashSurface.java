@@ -47,7 +47,7 @@ public class SplashSurface extends SurfaceView implements Runnable{
 				continue;
 			}
 			canvas = holder.lockCanvas();
-			canvas.drawRGB( 255, 190, 200);
+			canvas.drawRGB( 128, 0, 0);
 			canvas.drawText("Little Math Helper", canvas.getWidth()/2, canvas.getHeight()/2+100, paint);
 			canvas.drawText("Make Life Better", canvas.getWidth()/2, canvas.getHeight()/2+160, paint);
 			if(changingHeight>canvas.getHeight()/4){
