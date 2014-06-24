@@ -37,9 +37,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		initialize();
-		String x = getXY(2, 4, 3, 2, 10, 20)[0];
-		String y = getXY(2, 4, 3, 2, 10, 20)[1];
-		Log.i("RESULT", x + "   " + y);
+		
 	}
 
 	public String[] getXY(int x1, int y1, int x2, int y2, int z1, int z2) {

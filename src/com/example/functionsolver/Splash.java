@@ -14,6 +14,20 @@ public class Splash extends Activity{
 		super.onCreate(savedInstanceState);
 		surface = new SplashSurface(this);
 		setContentView(surface);
+	
+	}
+
+	@Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		super.onPause();
+	surface.pause();
+	}
+
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
 		Thread thread = new Thread(){
 			@Override
 			public void run(){
@@ -28,19 +42,6 @@ public class Splash extends Activity{
 			}
 		};
 		thread.start();
-	}
-
-	@Override
-	protected void onPause() {
-		// TODO Auto-generated method stub
-		super.onPause();
-	surface.pause();
-	}
-
-	@Override
-	protected void onResume() {
-		// TODO Auto-generated method stub
-		super.onResume();
 		surface.resume();
 	}
 	

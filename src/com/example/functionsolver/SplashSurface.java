@@ -57,12 +57,6 @@ public class SplashSurface extends SurfaceView implements Runnable{
 				holder.unlockCanvasAndPost(canvas);
 			}else{ // moving finished, words pop up.
 				canvas.drawBitmap(image_bulb, canvas.getWidth()/3, changingHeight,null);
-				
-				try{
-					thread.sleep(700);
-				}catch(Exception e){
-					e.printStackTrace();
-				}
 				holder.unlockCanvasAndPost(canvas);
 				break;
 				
