@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/back1"
+      android:orientation="vertical"
+      android:padding="20dp" >
+
+    <LinearLayout
+        style="@style/AppBaseTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonX"
+            style="@style/AppTheme"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:text="X"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/editTextX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="40sp"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonY"
+            style="@style/AppBaseTheme"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:text="Y"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/editTextY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="40sp"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonZ"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:text="Z"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/editTextZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="40sp"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/buttonSolve"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/b1"
+            android:text="Solve"
+            android:textColor="#000033"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@+id/buttonSolve"
+            android:layout_marginRight="62dp"
+            android:layout_toLeftOf="@+id/buttonSolve"
+            android:background="@drawable/b1"
+            android:text="Clear"
+            android:textColor="#000033"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/formula2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/answerTitle"
+            android:layout_alignLeft="@+id/formula1"
+            android:layout_marginBottom="47dp"
+            android:text=""
+            android:textSize="40sp" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/formula2"
+            android:background="@color/grey" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/backgroundCalculate"
+            android:background="@color/grey" />
+
+        <TextView
+            android:id="@+id/answerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/answerXYZ"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="28dp"
+            android:text="Answer"
+            android:textColor="#ffcc33"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/answerXYZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/view2"
+            android:layout_marginBottom="29dp"
+            android:layout_toRightOf="@+id/formulaTitle"
+            android:textColor="#ffcc33"
+            android:text=""
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/formula1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/formula2"
+            android:layout_alignLeft="@+id/buttonClear"
+            android:layout_marginBottom="40dp"
+            android:text=""
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/formulaTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/formula2"
+            android:layout_alignBottom="@+id/formula2"
+            android:layout_alignLeft="@+id/formulaTitle1"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:text="F2"
+            android:textColor="#ffcc33"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/formulaTitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/formula1"
+            android:layout_alignBottom="@+id/formula1"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="85dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:text="F1"
+            android:textColor="#ffcc33"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/backgroundCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Linear Function"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/star1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/formulaTitle1"
+   			android:layout_marginLeft="30dp"
+            android:src="@drawable/i1"
+             />
+        
+           <ImageView
+               android:id="@+id/star2"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:layout_alignTop="@+id/formulaTitle2"
+               android:layout_marginLeft="30dp"
+               android:src="@drawable/i1"
+               android:visibility="invisible" />
+
+    </RelativeLayout>
+</LinearLayout>
+</LinearLayout>
